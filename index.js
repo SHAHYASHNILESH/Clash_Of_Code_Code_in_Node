@@ -12,5 +12,5 @@ app.use(cors());
 
 app.use("/api/payment/", paymentRoutes);
 
-const port =3000;
+const port = process.env.PORT || 8080;
 app.listen(port, () => console.log(`Listening on port ${port}...`));
